@@ -1,6 +1,8 @@
 import scrapy
 import csv
 
+### Should probably add a time delay between requests to this, or chunk your input csv into smaller components.
+
 class BreadcrumbSpider(scrapy.Spider):
     name = "bread_spider"
     allowed_domains = ['lloydspharmacy.com']
